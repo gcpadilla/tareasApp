@@ -81,7 +81,7 @@ const EditTarea = () => {
 	return (
 		<Container>
 			<Box mt={2}>
-				<form>
+				<form onSubmit={handleSubmit}>
 					<div>
 						<Input
 							ref={ref}
@@ -102,7 +102,7 @@ const EditTarea = () => {
 						/>
 					</div>
 					<Box mt={2}>
-						<Button variant="contained" color="primary" onClick={handleSubmit}>
+						<Button type="submit" variant="contained" color="primary">
 							Guardar
 						</Button>
 					</Box>
